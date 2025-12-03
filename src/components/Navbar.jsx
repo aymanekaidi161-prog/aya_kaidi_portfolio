@@ -116,13 +116,6 @@ const Navbar = () => {
               {theme === "light" ? <Moon size={20} /> : <Sun size={20} />}
             </button>
 
-            <a
-              href="/Aya_Kaidi_CV.pdf"
-              download="AyaKaidiCV.pdf"
-              className="btn-primary inline-flex items-center gap-2 text-sm"
-            >
-              <Download size={16} /> Download CV
-            </a>
           </div>
 
           {/* Mobile menu button */}
