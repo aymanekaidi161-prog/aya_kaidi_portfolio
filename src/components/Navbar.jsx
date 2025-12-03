@@ -166,13 +166,7 @@ const Navbar = () => {
                 Switch Theme
               </button>
 
-              <a
-                href="/cv.pdf"
-                download
-                className="px-6 py-3 bg-amber-900 text-white rounded-lg font-medium hover:bg-amber-800 transition-all duration-300 shadow-md flex items-center justify-center gap-2"
-              >
-                <Download size={16} /> Download CV
-              </a>
+              
             </div>
           </motion.div>
         )}

@@ -99,13 +99,7 @@ const HeroSection = () => {
           transition={{ duration: 0.6, delay: 1.2 }}
           className="absolute bottom-8 left-1/2 -translate-x-1/2"
         >
-          <button
-            onClick={scrollToAbout}
-            className="flex flex-col items-center text-stone-600 dark:text-stone-400 hover:text-amber-900 dark:hover:text-amber-500 transition-colors"
-          >
-            <span className="text-sm mb-2">Scroll</span>
-            <ChevronDown className="animate-bounce" size={24} />
-          </button>
+         
         </motion.div>
       </div>
     </section>
