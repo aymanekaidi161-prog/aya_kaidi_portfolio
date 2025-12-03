@@ -1,13 +1,13 @@
-import { motion } from 'framer-motion'
-import { ChevronDown } from 'lucide-react'
-import { FloatingStar, DecorativeFrame } from './DecorativeElements'
-
+import { motion } from "framer-motion";
+import { ChevronDown } from "lucide-react";
+import { FloatingStar, DecorativeFrame } from "./DecorativeElements";
+import heroImage from "../assets/hero.jpeg";
 
 const HeroSection = () => {
   const scrollToContact = () =>
-    document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' })
+    document.querySelector("#contact")?.scrollIntoView({ behavior: "smooth" });
   const scrollToAbout = () =>
-    document.querySelector('#about')?.scrollIntoView({ behavior: 'smooth' })
+    document.querySelector("#about")?.scrollIntoView({ behavior: "smooth" });
 
   return (
     <section
@@ -16,7 +16,6 @@ const HeroSection = () => {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-
           {/* Left side: Text */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -58,8 +57,8 @@ const HeroSection = () => {
               transition={{ duration: 0.6, delay: 0.9 }}
               className="mt-8"
             >
-              <button 
-                onClick={scrollToContact} 
+              <button
+                onClick={scrollToContact}
                 className="px-8 py-3 bg-amber-900 dark:bg-amber-700 text-white rounded-full text-lg font-medium hover:bg-amber-800 dark:hover:bg-amber-600 transition-all duration-300 shadow-lg hover:scale-105"
               >
                 Let's Collaborate
@@ -75,12 +74,20 @@ const HeroSection = () => {
             className="order-1 lg:order-2 relative"
           >
             <FloatingStar className="absolute -top-4 right-10 z-20" delay={1} />
-            <FloatingStar className="absolute bottom-10 -right-4 z-20" delay={1.2} />
-            <FloatingStar className="absolute top-1/2 -left-6 z-20" delay={1.4} />
+            <FloatingStar
+              className="absolute bottom-10 -right-4 z-20"
+              delay={1.2}
+            />
+            <FloatingStar
+              className="absolute top-1/2 -left-6 z-20"
+              delay={1.4}
+            />
             <DecorativeFrame className="max-w-sm mx-auto lg:max-w-md">
-              <div className="aspect-[3/4] bg-stone-200 dark:bg-stone-800 rounded-3xl overflow-hidden shadow-2xl flex items-center justify-center">
-                <span className="text-center px-4 text-stone-400 dark:text-stone-500">Upload Hero Image</span>
-              </div>
+              <img
+                src={heroImage}
+                alt="hero Kaidi Aya"
+                className="w-full h-full object-cover"
+              />
             </DecorativeFrame>
           </motion.div>
         </div>
@@ -102,7 +109,7 @@ const HeroSection = () => {
         </motion.div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default HeroSection
+export default HeroSection;

@@ -43,7 +43,7 @@ const SkillsSection = () => {
           className="text-center mb-16"
         >
           <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold text-amber-900 dark:text-amber-500 inline-flex items-center gap-3">
-            Skill{" "}
+            Skills{" "}
             <span className="text-amber-900 dark:text-amber-500 animate-pulse">
               ✦
             </span>
@@ -60,7 +60,7 @@ const SkillsSection = () => {
             <DecorativeFrame className="max-w-md mx-auto">
               <img
                 src={skillImage}
-                alt="Education"
+                alt="skill img"
                 className="w-full h-full object-cover"
               />
             </DecorativeFrame>

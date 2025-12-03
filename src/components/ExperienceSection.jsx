@@ -88,7 +88,7 @@ const ExperienceSection = () => {
             <DecorativeFrame className="max-w-sm mx-auto">
               <img
                 src={experienceImage}
-                alt="Education"
+                alt="experience"
                 className="w-full h-full object-cover"
               />
             </DecorativeFrame>
